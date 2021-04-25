@@ -1,11 +1,11 @@
 pragma solidity ^0.5.00;
 
 // ----------------------------------------------------------------------------
-// 'GGMToken' token contract
+// 'WAP' token contract
 //
-// Deployed to : 0xFEB02D9383C49A8373F88e82EbCecB553c1837bf
-// Symbol      : GGM
-// Name        : GGMToken
+// Deployed to : 0x01093c3747139217993b1C29d9e28b84c10f891a
+// Symbol      : WAP
+// Name        : WAP
 // Total supply: 100000000
 // Decimals    : 18
 //
@@ -99,7 +99,7 @@ contract Owned {
 // ERC20 Token, with the addition of symbol, name and decimals and assisted
 // token transfers
 // ----------------------------------------------------------------------------
-contract GGMToken is ERC20Interface, Owned, SafeMath {
+contract WAP is ERC20Interface, Owned, SafeMath {
     string public symbol;
     string public  name;
     uint8 public decimals;
@@ -113,12 +113,12 @@ contract GGMToken is ERC20Interface, Owned, SafeMath {
     // Constructor
     // ------------------------------------------------------------------------
     constructor() public {
-        symbol = "GGM";
-        name = "GGMToken";
+        symbol = "WAP";
+        name = "WAP";
         decimals = 18;
         _totalSupply = 100000000000000000000000000;
-        balances[0xFEB02D9383C49A8373F88e82EbCecB553c1837bf] = _totalSupply;
-        emit Transfer(address(0), 0xFEB02D9383C49A8373F88e82EbCecB553c1837bf, _totalSupply);
+        balances[0x01093c3747139217993b1C29d9e28b84c10f891a] = _totalSupply;
+        emit Transfer(address(0), 0x01093c3747139217993b1C29d9e28b84c10f891a, _totalSupply);
     }
 
 
